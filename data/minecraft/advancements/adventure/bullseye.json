@@ -8,7 +8,7 @@
       "translate": "Opponents Be Warned"
     },
     "description": {
-      "translate": "Shoot a bullseye from over 30 blocks away"
+      "translate": "Shoot a bullseye from over 50 blocks away"
     },
     "frame": "challenge",
     "show_toast": true,
@@ -29,7 +29,7 @@
             "predicate": {
               "distance": {
                 "horizontal": {
-                  "min": 30.0
+                  "min": 50.0
                 }
               }
             },
