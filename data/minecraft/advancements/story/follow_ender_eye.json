@@ -17,10 +17,20 @@
   },
   "criteria": {
     "in_stronghold": {
-      "trigger": "minecraft:location",
       "conditions": {
-        "feature": "stronghold"
-      }
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "minecraft:stronghold"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
     }
   },
   "requirements": [
