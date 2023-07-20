@@ -1,22 +1,42 @@
 {
-    "display": {
-        "icon": {
-            "item": "minecraft:oak_planks"
-        },
-        "title": {"translate":"Do You Want to Trade?"},
-        "description": {"translate":"Find an NPC village to loot"},
-		"frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
-    },
-    "parent": "minecraft:adventure/root",		
-    "criteria": {
-        "village": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "feature": "village"
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "village": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "minecraft:village"
+              }
             }
-        }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
     }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "Find an NPC village to loot"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:oak_planks"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "Do You Want To Trade?"
+    }
+  },
+  "requirements": [
+    [
+      "village"
+    ]
+  ],
+  "sends_telemetry_event": true
 }
