@@ -5,6 +5,6 @@ scoreboard players set @a[scores={dsnjoin=1..}] dsnjoin 0
 execute if entity @r[scores={dsnconfig=1}] as @r[scores={dsnconfig=1}] run scoreboard objectives add health health "Health"
 execute if entity @r[scores={dsnconfig=1}] as @r[scores={dsnconfig=1}] run scoreboard objectives add deaths deathCount "Deaths"
 execute if entity @r[scores={dsnconfig=1}] as @r[scores={dsnconfig=1}] run scoreboard objectives setdisplay list health
-execute if entity @r[scores={dsnconfig=1}] as @r[scores={dsnconfig=1}] run scoreboard objectives setdisplay belowName deaths
+execute if entity @r[scores={dsnconfig=1}] as @r[scores={dsnconfig=1}] run scoreboard objectives setdisplay below_name deaths
 execute if entity @r[scores={dsnconfig=1}] as @r[scores={dsnconfig=1}] run effect give @a poison 1 1 true
 execute if entity @r[scores={dsnconfig=1..}] as @r[scores={dsnconfig=1..}] run scoreboard players set @a[scores={dsnconfig=1..}] dsnconfig 0
